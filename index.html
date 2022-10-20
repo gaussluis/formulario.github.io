@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--
+        la estructura básica de un formulario se compone de 4 elementos
+        
+        form -> es la etiqueta que engloba nuestro formulario
+        label -> sirve para escribir el nombre del campo a rellenar
+        input -> sirve para crear un campo que permitirá al usuario interactuar
+        button -> crea un botón que permitirá enviar el formulario
+    -->
+    <form action="enviar.html">
+        <label for="">Nombre</label>
+        <input type="text" placeholder="tu nombre">
+        <button type="submit">Enviar formulario</button>
+    </form>
+    <br>
+    <br>
+    <!--Otra forma de crear un button-->
+    <form action="">
+        <input type="submit" value="enviar input">
+    </form>
+    <!--input fecha-->
+    <br>
+    <br>
+    <form action="">
+        <input type="date">
+        <input type="time">
+    </form>
+    <br>
+    <br>
+    <div>
+        <label for="">Search
+            <input type="search">
+        </label>
+        
+    </div>
+    <div>
+        <label for="">Telefono
+             <input type="tel">
+        </label>
+       
+    </div>
+    <form action="/action_page.php">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Submit">
+    </form>
+    <div>
+        <label for="">Password
+            <input type="password">
+        </label>
+        
+    </div>
+    <div>
+        <label for="URL"><input type="url"></label>
+    </div>
+    <input type="color">
+    <br>
+    <input type="number">
+    <br>
+    <input type="range" step="5" min="0" max="20">
+    <br>
+    <h1>Elementos seleccionables</h1>
+    <label for="">Masculino
+        <input type="radio" name="gender" value="Masculino">
+    </label>
+    <label for="">Femenino
+        <input type="radio" name="gender" value="Femenino">
+    </label>
+    <h1>¿Conoces algún lenguaje de programación?</h1>
+    <label for="">HTML
+        <input type="checkbox" name="languajes" value="HTML">
+    </label>
+    <label for="">CSS 
+        <input type="checkbox" name="languajes" value="CSS">
+    </label>
+    <label for="">JavaScript 
+        <input type="checkbox" name="languajes" value="JS">
+    </label>
+    <label for="">PHP 
+        <input type="checkbox" name="languajes" value="PHP">
+    </label>
+    <h1>Elementos seleccionables</h1>
+    <select name="languajes" id="">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="PHP">PHP</option>
+    </select>
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" id="name">
+        </div>
+        <label for="surname">Apellidos</label>
+        <input type="text" id="surname">
+    </fieldset>
+    <label for="message">Mensaje</label>
+    <textarea name="" id="message" cols="30" rows="10"></textarea>
+</body>
+</html>
